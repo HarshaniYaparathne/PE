@@ -1,4 +1,5 @@
 import React from 'react';
+import accountIcon from '../images/account.png';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,9 @@ const Navbar = () => {
         <li><a href="#">Contact</a></li>
         <li><a href="#">Pre-booking</a></li>
       </ul>
-      <div className="fa-solid fa-user"></div>
+      <div className="profile-icon">
+        <img src={accountIcon} alt="Profile" />
+      </div>
     </nav>
   );
 };

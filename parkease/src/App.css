@@ -32,8 +32,12 @@
   text-decoration-color: #00ff00;
 }
 
-.profile-icon {
-  font-size: 1.5rem;
+.profile-icon img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 
@@ -70,13 +74,14 @@
 
 
 .home {
+  height: 100vh;
+  background-image: url('./images/HomeImage.jpeg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: black;
+  padding: 50px;
   color: white;
-  padding: 60px 50px;
-  flex-wrap: wrap;
 }
 
 .home-content {
@@ -84,16 +89,10 @@
 }
 
 .green {
-  color: limegreen;
+  color: #00ff00;
 }
 
 .slt-logo {
   margin-top: 20px;
   width: 150px;
-}
-
-.home-image img {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 10px;
 }
